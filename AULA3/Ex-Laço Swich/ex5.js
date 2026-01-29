@@ -2,8 +2,8 @@
 
 const leia = require("readline-sync");
 
-let codigo = parseInt(question("Código do produto: "));
-let quantidade =  parseInt(question("Quantidade: "));
+let codigo = parseInt(leia.question("Código do produto: "));
+let quantidade =  parseInt(leia.question("Quantidade: "));
 
 let produto = "";
 let preco = 0;

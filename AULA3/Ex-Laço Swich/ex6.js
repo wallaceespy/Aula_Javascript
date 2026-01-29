@@ -1,9 +1,9 @@
 
 const leia = require("readline-sync");
 
-let nome = prompt("Nome do colaborador: ");
-let codigoCargo = parseInt(prompt("Código do cargo: "));
-let salario = parseFloat(prompt("Salário: "));
+let nome = leia.question("Nome do colaborador: ");
+let codigoCargo = parseInt(leia.question("Código do cargo: "));
+let salario = parseFloat(leia.question("Salário: "));
 
 let cargo = "";
 let reajuste = 0;
@@ -43,7 +43,8 @@ switch (codigoCargo) {
 }
 
 if (reajuste > 0) {
-    let novoSlario = salario + (salario * reajuste);
+    let novoSalario = salario + (salario * reajuste);
+    console.log("\n---Resultado---");
     console.log(`Nome do colaborador: ${nome}`);
     console.log(`Cargo: ${cargo}`);
     console.log(`Salário: R$ ${novoSalario.toFixed(2)}`);

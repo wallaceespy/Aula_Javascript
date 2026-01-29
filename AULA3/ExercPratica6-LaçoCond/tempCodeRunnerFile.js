@@ -3,9 +3,9 @@ const leia = require("readline-sync");
 
 
 
-let A = parseFloat(leia.question("Digite o número A: "));
-let B = parseFloat(leia.question("Digite o número B: "));
-let C = parseFloat(leia.question("Digite o número C: "));
+let A = parseInt(question("Digite o número A: "));
+let B = parseInt(question("Digite o número B: "));
+let C = parseInt(question("Digite o número C: "));
 
 let soma = A + B;
 

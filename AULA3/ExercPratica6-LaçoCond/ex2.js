@@ -1,7 +1,7 @@
 const leia = require("readline-sync");
 
 
-let numero = parseInt(question("Digite um número: "));
+let numero = parseInt(leia.question("Digite um número: "));
 
 let parOuImpar;
 let positivoOuNegativo;
